@@ -50,7 +50,6 @@ public class FooController {
     return Mono
         .fromSupplier(() -> {
           tracer.continueSpan(span);
-          //Note the lack of a span here if we don't change the scheduler
           LOGGER.info("processing");
           return "hello";
         })
