@@ -2,10 +2,14 @@ group 'org.springframework.sample'
 
 buildscript {
     repositories {
-	    mavenCentral()
-	    maven {
-	        url 'https://repo.spring.io/milestone'
-	    }
+	mavenCentral()
+	maven {
+	    url 'https://repo.spring.io/milestone'
+	}
+	maven {
+	    url 'https://repo.spring.io/snapshot' 
+	}
+
     }
 
     dependencies {
@@ -21,6 +25,9 @@ repositories {
     maven {
         url 'https://repo.spring.io/milestone'
     }
+    maven {
+	url 'https://repo.spring.io/snapshot' 
+    }
 
 }
 
@@ -33,7 +40,7 @@ targetCompatibility = 1.8
 
 dependencyManagement {
     imports {
-        mavenBom 'org.springframework.cloud:spring-cloud-sleuth:2.0.0.M5'
+        mavenBom 'org.springframework.cloud:spring-cloud-sleuth:2.0.0.BUILD-SNAPSHOT'
     }
 }
 
