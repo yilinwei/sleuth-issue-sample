@@ -46,6 +46,5 @@ dependencyManagement {
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-webflux'
-    compile 'org.springframework:spring-webmvc'
     compile 'org.springframework.cloud:spring-cloud-starter-sleuth'
 }
